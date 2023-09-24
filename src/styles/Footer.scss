@@ -1,0 +1,45 @@
+@import './SharedMixins';
+@import './Variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap');
+
+
+.footer_section{
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+    @include PaddingRespnsive('xlarge', 40px, 30px,30px, 30px);
+    @include PaddingRespnsive('large',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+
+
+    .footer_title_div{
+        border-bottom: solid 2px #ce8b2f;
+
+        @include WidthResponsive('xlarge', 70%);
+        @include WidthResponsive('large', 70%);
+        @include WidthResponsive('medium', 70%);
+        @include WidthResponsive('small', 70%);
+
+        .footer_titles{
+            @include Texts('xlarge', 24px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 24px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 24px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 22px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+            color: #ce8b2f;
+        }
+    }
+    .footer_link{
+        color: #0893ef;
+        @include Texts('xlarge', 20px, 400, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 20px, 400, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 20px, 400, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 400, $FontFamilyRegular1, $FontFamilyRegular2 );
+        margin-top: 15px;
+    }
+    .footer_text{
+        @include Texts('xlarge', 20px, 400, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 20px, 400, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 20px, 400, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 400, $FontFamilyRegular1, $FontFamilyRegular2 );
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,311 @@
+@import './SharedMixins';
+@import './Variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.nav_bars{
+    position: sticky;
+    top: 0;
+    background-color: white
+}
+.navbar_top_header{
+
+    @include FlexResponsive('xlarge',flex, row, space-between, center);
+    @include FlexResponsive('large',flex, row, space-between, center);
+    @include FlexResponsive('medium',flex, row, space-between, center);
+    @include FlexResponsive('small',flex, column, center, center, 'wrap');
+
+    .icon_top_item{
+        @include WidthResponsive('xlarge', 20%);
+        @include WidthResponsive('large', 20%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+    }
+    .top_header_item{
+        @include FlexResponsive('xlarge',flex, row, center, center);
+        @include FlexResponsive('large',flex, row, center, center);
+        @include FlexResponsive('medium',flex, row, center, center);
+        @include FlexResponsive('small',flex, column, center, center, 'wrap');
+        
+    }
+    .emptyDiv{
+        background-color: white;
+        width: 1px;
+        height: 100px;
+    }
+    .top_nav_text{
+        @include Texts('xlarge', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+    .top_nav_text_heading{
+        @include Texts('xlarge', 36px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 36px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+  
+}
+
+.nav_item{
+    @include Texts('xlarge', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
+
+.book_service_btn{
+    @include ButtonMixins('xlarge', 42px, 200px,  $ButtonBGOne, 5px);
+    @include ButtonMixins('large', 42px, 200px,  $ButtonBGOne,  5px);
+    @include ButtonMixins('medium', 42px, 200px,  $ButtonBGOne, 5px);
+    @include ButtonMixins('small', 42px, 200px,  $ButtonBGOne,  5px );
+    @include Texts('xlarge', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
+
+.header_container{
+    width: 100%;
+    height: 100%;
+    background-image: url('/header_bg.webp');
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include FlexResponsive('xlarge',flex, row, space-between, center);
+    @include FlexResponsive('large',flex, row, space-between, center);
+    @include FlexResponsive('medium',flex, row, space-between, center);
+    @include FlexResponsive('small',flex, column, center, center, 'wrap');
+
+    @include PaddingRespnsive('xlarge', 40px, 30px,30px, 30px);
+    @include PaddingRespnsive('large',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+    
+    @include MarginRespnsive('small',30px, 0px,0px, 0px);
+
+    .header_text_div{
+        @include WidthResponsive('xlarge', 70%);
+        @include WidthResponsive('large', 70%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+
+        .top_banner_text{
+            @include Texts('xlarge', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+        }
+        .main_heading{
+            @include Texts('xlarge', 50px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 50px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 34px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 28px, 800, $FontFamilyRegular1, $FontFamilyRegular2 );
+            
+        }
+        .regular_text{
+            @include Texts('xlarge', 24px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 24px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+        }
+        .book_now_btn{
+            @include ButtonMixins('xlarge', 42px, 140px,  $ButtonBGOne, 5px);
+            @include ButtonMixins('large', 42px, 140px,  $ButtonBGOne,  5px);
+            @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
+            @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
+        }
+    }
+ 
+    .request_form{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        .form_title{
+            @include Texts('xlarge', 40px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 40px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 25px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+            text-align: center;
+            color: $TEXTGRAY;
+        }
+        .service_text{
+            @include Texts('xlarge', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+        }
+        .inputs{
+            @include WidthResponsive('xlarge', 100%);
+            @include WidthResponsive('large', 100%);
+            @include WidthResponsive('medium', 100%);
+            @include WidthResponsive('small', 100%);
+
+            border: solid 1px gray;
+            outline: none;
+            height: 35px;
+            display: block;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+        
+        .book_now_btn{
+            @include ButtonMixins('xlarge', 40px, 140px,  $ButtonBGOne, 5px);
+            @include ButtonMixins('large', 40px, 140px,  $ButtonBGOne,  5px);
+            @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
+            @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
+    
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $FontFamilyRegular1;
+            font-family: $FontFamilyRegular2;
+            color: white;
+        }
+
+    }
+}
+
+.bottom_header_container{
+    background-color: $HEADERBG;
+    @include FlexResponsive('xlarge',flex, row, space-evenly, center);
+    @include FlexResponsive('large',flex, row, space-evenly, center);
+    @include FlexResponsive('medium',flex, row, space-evenly, center);
+    @include FlexResponsive('small',flex, column, center, center);
+    padding: 10px;
+    .respond_text{
+        color: #539ec6;
+        @include Texts('xlarge', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+    .bottom_header_title{
+        @include Texts('xlarge', 36px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 36px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 25px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 22px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+        color: white;
+    }
+    .header_icon{
+        color: white;
+        height: 60px;
+        width: 60px;
+    }
+    .bottom_header_icondiv{
+        @include FlexResponsive('xlarge',flex, row, center, center);
+        @include FlexResponsive('large',flex, row, center, center);
+        @include FlexResponsive('medium',flex, row, center, center);
+        @include FlexResponsive('small',flex, column, center, center, 'wrap'); @include FlexResponsive('xlarge',flex, row, center, center);
+        @include FlexResponsive('large',flex, row, center, center);
+        @include FlexResponsive('medium',flex, row, center, center);
+        @include FlexResponsive('small',flex, column, center, center, 'wrap');
+    }
+    .book_now_btn{
+        @include ButtonMixins('xlarge', 50px, 140px,  $ButtonBGOne, 5px);
+        @include ButtonMixins('large', 50px, 140px,  $ButtonBGOne,  5px);
+        @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
+        @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
+
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $FontFamilyRegular1;
+        font-family: $FontFamilyRegular2;
+        color: white;
+    }
+    .emptyDiv{
+        background-color: white;
+        width: 1px;
+        height: 100px;
+    }
+    .top_header_item{
+        @include FlexResponsive('xlarge',flex, row, center, center);
+        @include FlexResponsive('large',flex, row, center, center);
+        @include FlexResponsive('medium',flex, row, center, center);
+        @include FlexResponsive('small',flex, column, center, center);
+    }
+    .top_nav_text{
+        @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+    .top_nav_text_heading{
+        @include Texts('xlarge', 36px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 36px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+}
+
+.difference_section{
+    @include PaddingRespnsive('xlarge', 70px, 70px,70px, 70px);
+    @include PaddingRespnsive('large', 60px, 60px,60px, 60px);
+    @include PaddingRespnsive('medium', 50px, 50px,50px, 50px);
+    @include PaddingRespnsive('small',40px, 40px,40px, 40px);
+
+    @include FlexResponsive('xlarge',flex, column, center, center);
+    @include FlexResponsive('large',flex, column, center, center);
+    @include FlexResponsive('medium',flex, column, center, center);
+    @include FlexResponsive('small',flex, column, center, center);
+
+    .difference_title{
+        @include Texts('xlarge', 48px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 45px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 34px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 28px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+
+        color: #253845;
+    }
+    .difference_text{
+        @include Texts('xlarge', 20px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 20px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 20px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+
+        color: #253845;
+    }
+}
+
+.why_hire_section{
+    @include PaddingRespnsive('xlarge', 30px, 30px,30px, 30px);
+    @include PaddingRespnsive('large',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+
+    .whyHire_main_titles{
+        @include Texts('xlarge', 48px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 45px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 34px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 28px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+        text-align: center;
+        color: $HEADERBG;
+    }
+
+    .whyHire_titles{
+        @include Texts('xlarge', 30px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 30px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 25px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 22px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    
+        color: $ButtonBGOne;
+        
+    }
+    .whyHire_text{
+        @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+    .whyHire_column{
+        @include FlexResponsive('xlarge',flex, column, center, center);
+        @include FlexResponsive('large',flex,  column, center, center);
+        @include FlexResponsive('medium',flex,  column, center, center);
+        @include FlexResponsive('small',flex, column, center, center, 'wrap');
+    }
+}
