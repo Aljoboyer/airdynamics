@@ -1,0 +1,57 @@
+@import './SharedMixins';
+@import './Variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap');
+
+.landing_about_section{
+    @include PaddingRespnsive('xlarge', 50px, 50px,50px, 50px);
+    @include PaddingRespnsive('large',50px, 50px,50px, 50px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+
+    .landing_about_container{
+        @include FlexResponsive('xlarge',flex, row, space-evenly, flex-start);
+        @include FlexResponsive('large',flex, row, space-evenly, flex-start);
+        @include FlexResponsive('medium',flex, row, column, center);
+        @include FlexResponsive('small',flex, column, center, center,);
+
+        .book_now_btn{
+            @include ButtonMixins('xlarge', 42px, 140px,  $ButtonBGOne, 5px);
+            @include ButtonMixins('large', 42px, 140px,  $ButtonBGOne,  5px);
+            @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
+            @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
+
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $FontFamilyRegular1;
+            font-family: $FontFamilyRegular2;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .about_title_div{
+            border-bottom: solid 8px $ButtonBGOne;
+
+            @include WidthResponsive('xlarge', 15%);
+            @include WidthResponsive('large', 15%);
+            @include WidthResponsive('medium', 15%);
+            @include WidthResponsive('small', 15%);
+
+        }
+        .about_title{
+            @include Texts('xlarge', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 38px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 30px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+
+            color: $ButtonBGOne;
+        }
+        .about_text{
+            @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+            line-height: 35px;
+        }
+  
+    }
+}

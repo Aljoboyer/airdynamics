@@ -5,6 +5,7 @@ import Header from '../../components/Headers/Headers'
 import HeaderBottom from '../../components/Headers/HeaderBottom'
 import DifferenceSection from '../../components/DifferenceSection/DifferenceSection'
 import WhyHireMe from '../../components/WhyHire/WhyHire'
+import LandingAbout from '../../components/LandingAbout/LandingAbout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
         <HeaderBottom/>
         <WhyHireMe/>
         <DifferenceSection/>
+        <LandingAbout/>
     </main>
   )
 }

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .landing_about_section {
+    padding: 50px 50px 50px 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .landing_about_section {
+    padding: 50px 50px 50px 50px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .landing_about_section {
+    padding: 30px 30px 30px 30px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .landing_about_section {
+    padding: 30px 30px 30px 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .landing_about_section .landing_about_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .landing_about_section .landing_about_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .landing_about_section .landing_about_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: column;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .landing_about_section .landing_about_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+.landing_about_section .landing_about_container .book_now_btn {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .landing_about_section .landing_about_container .book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .landing_about_section .landing_about_container .book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .landing_about_section .landing_about_container .book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .landing_about_section .landing_about_container .book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+.landing_about_section .landing_about_container .about_title_div {
+  border-bottom: solid 8px #c60505;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .landing_about_section .landing_about_container .about_title_div {
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .landing_about_section .landing_about_container .about_title_div {
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .landing_about_section .landing_about_container .about_title_div {
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .landing_about_section .landing_about_container .about_title_div {
+    width: 15%;
+  }
+}
+.landing_about_section .landing_about_container .about_title {
+  color: #c60505;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .landing_about_section .landing_about_container .about_title {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .landing_about_section .landing_about_container .about_title {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .landing_about_section .landing_about_container .about_title {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .landing_about_section .landing_about_container .about_title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+.landing_about_section .landing_about_container .about_text {
+  line-height: 35px;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .landing_about_section .landing_about_container .about_text {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .landing_about_section .landing_about_container .about_text {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .landing_about_section .landing_about_container .about_text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .landing_about_section .landing_about_container .about_text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}/*# sourceMappingURL=About.css.map */
