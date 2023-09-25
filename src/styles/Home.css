@@ -12,6 +12,11 @@ body {
   top: 0;
   background-color: white;
 }
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .nav_bars {
+    padding: 2px 2px 30px 2px;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
   .navbar_top_header {

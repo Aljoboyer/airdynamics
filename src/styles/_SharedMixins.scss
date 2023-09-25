@@ -70,6 +70,29 @@
     }
 }
 
+@mixin HeightResponsive($device, $height) {
+    @if ($device == 'small') {
+        @media only screen and (min-width:200px) and (max-width:567px) {
+            height: $height;
+        }
+    }
+    @if ($device == 'medium') {
+        @media only screen and (min-width:568px) and (max-width: 767px) {
+            height: $height;
+        }
+    }
+    @if ($device == 'large') {
+        @media only screen and (min-width:768px) and (max-width: 991px) {
+            height: $height;
+        }
+    }
+    @if ($device == 'xlarge') {
+        @media only screen and (min-width:992px) and (max-width: 3000px) {
+            height: $height;
+        }
+    }
+}
+
 @mixin ButtonMixins($device, $h, $w,  $colors, $br) {
     @if ($device == 'small') {
         @media only screen and (min-width:200px) and (max-width:567px) {
