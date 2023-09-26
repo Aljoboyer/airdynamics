@@ -1,7 +1,8 @@
 
 export default function Header() {
     return (
-    <div className="header_container">
+    <div className="header_section">
+        <div className="header_container">
         <div className="header_text_div">
             <div className="bg-[#C60504] w-full lg:w-4/6 h-14 sm:h-10">
                 <p className="top_banner_text text-white text-center">Most trusted HVAC company in South Jersey</p>
@@ -53,6 +54,7 @@ export default function Header() {
 
             <button className='book_now_btn mt-4 ms-4'>BOOK SERVICE</button>
         </div>
+    </div>
     </div>
     )
   }

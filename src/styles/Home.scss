@@ -70,14 +70,21 @@ body{
     @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
 }
 
-.header_container{
+.header_section{
     width: 100%;
     height: 100%;
-    background-image: url('/header_bg.webp');
+    background-image: url('/headerBg.jpg');
     position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+.header_container{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.487);
+
 
     @include FlexResponsive('xlarge',flex, row, space-between, center);
     @include FlexResponsive('large',flex, row, space-between, center);

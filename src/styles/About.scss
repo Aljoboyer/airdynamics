@@ -2,6 +2,21 @@
 @import './Variables';
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap');
 
+//global about style
+.book_now_btn{
+    @include ButtonMixins('xlarge', 42px, 140px,  $ButtonBGOne, 5px);
+    @include ButtonMixins('large', 42px, 140px,  $ButtonBGOne,  5px);
+    @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
+    @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
+
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $FontFamilyRegular1;
+    font-family: $FontFamilyRegular2;
+    color: white;
+    margin-top: 20px;
+}
+
 .landing_about_section{
     @include PaddingRespnsive('xlarge', 50px, 50px,50px, 50px);
     @include PaddingRespnsive('large',50px, 50px,50px, 50px);
@@ -11,22 +26,8 @@
     .landing_about_container{
         @include FlexResponsive('xlarge',flex, row, space-evenly, flex-start);
         @include FlexResponsive('large',flex, row, space-evenly, flex-start);
-        @include FlexResponsive('medium',flex, row, column, center);
+        @include FlexResponsive('medium',flex, row, space-evenly, center);
         @include FlexResponsive('small',flex, column, center, center,);
-
-        .book_now_btn{
-            @include ButtonMixins('xlarge', 42px, 140px,  $ButtonBGOne, 5px);
-            @include ButtonMixins('large', 42px, 140px,  $ButtonBGOne,  5px);
-            @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
-            @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
-
-            font-size: 16px;
-            font-weight: 700;
-            font-family: $FontFamilyRegular1;
-            font-family: $FontFamilyRegular2;
-            color: white;
-            margin-top: 20px;
-        }
 
         .about_title_div{
             border-bottom: solid 8px $ButtonBGOne;
@@ -53,5 +54,103 @@
             line-height: 35px;
         }
   
+    }
+}
+
+.content_header{
+    width: 100%;
+    height: 100%;
+    background-image: url('/contentHeader.jpg');
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include PaddingRespnsive('xlarge', 50px, 50px,50px, 90px);
+    @include PaddingRespnsive('large',50px, 50px,50px, 50px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+
+    @include FlexResponsive('xlarge',flex, row, center, center);
+    @include FlexResponsive('large',flex, row, center, center);
+    @include FlexResponsive('medium',flex, row, center, center);
+    @include FlexResponsive('small',flex, row, center, center,);
+
+    .content_header_title{
+        @include Texts('xlarge', 80px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 80px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 50px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 40px, 800, $FontFamilyRegular1, $FontFamilyRegular2 );
+        color: white;
+    }
+    
+}
+
+.about_container{
+    @include FlexResponsive('xlarge',flex, row, space-evenly, flex-start);
+    @include FlexResponsive('large',flex, row, space-evenly, flex-start);
+    @include FlexResponsive('medium',flex, row, space-evenly, center);
+    @include FlexResponsive('small',flex, column, center, center,);
+
+    @include PaddingRespnsive('xlarge', 70px, 70px,70px, 70px);
+    @include PaddingRespnsive('large', 70px, 70px,70px, 70px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+
+    .about_text_container{
+        @include WidthResponsive('xlarge', 90%);
+        @include WidthResponsive('large', 90%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+    }
+    .about_title_div{
+        border-bottom: solid 8px $HEADERBG;
+
+        @include WidthResponsive('xlarge', 15%);
+        @include WidthResponsive('large', 15%);
+        @include WidthResponsive('medium', 15%);
+        @include WidthResponsive('small', 15%);
+
+    }
+  
+    .about_title{
+        @include Texts('xlarge', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 38px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 30px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+
+        color: $ButtonBGOne;
+    }
+    .about_text{
+        @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+        line-height: 35px;
+    }
+
+    .about_icon_div{
+        @include FlexResponsive('xlarge',flex, row, center, center);
+        @include FlexResponsive('large',flex, row, center, center);
+        @include FlexResponsive('medium',flex, row, center, center);
+        @include FlexResponsive('small',flex, row, center, center,);
+    }
+    .icon{
+        color: #2ea3f2;
+        height: 70px;
+        width: 70px;
+        font-weight: bold;
+    }
+    .icon_div_title{
+        @include Texts('xlarge', 22px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 22px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+    .about_text{
+        @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
     }
 }

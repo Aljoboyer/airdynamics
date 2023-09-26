@@ -34,7 +34,7 @@ export default function NavItem() {
                     <Link href="/">
                         <p className='nav_item'>HOME</p>
                     </Link>
-                    <Link href="/">
+                    <Link href="/aboutus">
                         <p className='nav_item'>ABOUT US</p>
                     </Link>
 {/* ----------------------------Nav dropdown------------------------------------------- */}

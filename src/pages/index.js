@@ -7,7 +7,6 @@ import DifferenceSection from '../../components/DifferenceSection/DifferenceSect
 import WhyHireMe from '../../components/WhyHire/WhyHire'
 import LandingAbout from '../../components/LandingAbout/LandingAbout'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
