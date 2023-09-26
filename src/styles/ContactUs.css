@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap");
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+.address_card_div .address_card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-top: inset 6px #c60505;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div .address_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div .address_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div .address_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div .address_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: "no-wrap";
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div .address_card {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div .address_card {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div .address_card {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div .address_card {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div .address_card {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div .address_card {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div .address_card {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div .address_card {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div .address_card {
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div .address_card {
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div .address_card {
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div .address_card {
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div .address_card .card_title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div .address_card .card_title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div .address_card .card_title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div .address_card .card_title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .address_card_div .address_card .card_text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .address_card_div .address_card .card_text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .address_card_div .address_card .card_text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .address_card_div .address_card .card_text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer {
+    padding: 50px 50px 50px 90px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer {
+    padding: 50px 50px 50px 50px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer {
+    padding: 30px 30px 30px 30px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer {
+    padding: 30px 30px 30px 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer .contact_form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer .contact_form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer .contact_form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer .contact_form {
+    width: 100%;
+  }
+}
+.contact_form_cotainer .inputs {
+  border: solid 1px gray;
+  outline: none;
+  height: 35px;
+  display: block;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer .inputs {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer .inputs {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer .inputs {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer .inputs {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer .contact_label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer .contact_label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer .contact_label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer .contact_label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer .address_title {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer .address_title {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer .address_title {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer .address_title {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+.contact_form_cotainer .comment_inputs {
+  border: solid 1px gray;
+  outline: none;
+  height: 35px;
+  display: block;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer .comment_inputs {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer .comment_inputs {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer .comment_inputs {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer .comment_inputs {
+    height: 180px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_form_cotainer .comment_inputs {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_form_cotainer .comment_inputs {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_form_cotainer .comment_inputs {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_form_cotainer .comment_inputs {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ContactUs.css.map */

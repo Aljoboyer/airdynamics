@@ -173,7 +173,7 @@ export default function NavItem() {
                     <Link href="/">
                         <p className='nav_item'>REVIEWS</p>
                     </Link>
-                    <Link href="/">
+                    <Link href="/contact-us">
                         <p className='nav_item'>CONTACT US</p>
                     </Link>
                   </div>

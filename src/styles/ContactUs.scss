@@ -1,0 +1,115 @@
+@import './SharedMixins';
+@import './Variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap');
+
+.address_card_div{
+    @include FlexResponsive('xlarge',flex, row, space-evenly, center);
+    @include FlexResponsive('large',flex, row,  space-evenly, center);
+    @include FlexResponsive('medium',flex, row,  space-evenly, center);
+    @include FlexResponsive('small',flex, column, center, center);
+
+    .address_card{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-top: inset 6px #c60505;
+        border-radius: 10px;
+
+        @include FlexResponsive('xlarge',flex, row, flex-start, center);
+        @include FlexResponsive('large',flex, row,  flex-start, center);
+        @include FlexResponsive('medium',flex, row,  flex-start, center);
+        @include FlexResponsive('small',flex, row, flex-start, center);
+        
+        @include WidthResponsive('xlarge', 35%);
+        @include WidthResponsive('large', 35%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+
+        @include HeightResponsive('xlarge', 130px);
+        @include HeightResponsive('large', 130px);
+        @include HeightResponsive('medium', 130px);
+        @include HeightResponsive('small', 130px);
+
+        
+        @include PaddingRespnsive('xlarge', 10px, 10px,10px, 10px);
+        @include PaddingRespnsive('large', 10px, 10px,10px, 10px);
+        @include PaddingRespnsive('medium',10px, 10px,10px, 10px);
+        @include PaddingRespnsive('small',10px, 10px,10px, 10px);
+
+        .card_title{
+            @include Texts('xlarge', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 22px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+        }
+        .card_text{
+            @include Texts('xlarge', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('large', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('medium', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+            @include Texts('small', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+        }
+    }
+}
+
+.contact_form_cotainer{
+    @include PaddingRespnsive('xlarge', 50px, 50px,50px, 90px);
+    @include PaddingRespnsive('large',50px, 50px,50px, 50px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+
+    @include WidthResponsive('xlarge', 100%);
+    @include WidthResponsive('large', 100%);
+    @include WidthResponsive('medium', 100%);
+    @include WidthResponsive('small', 100%);
+
+    .contact_form{
+        @include WidthResponsive('xlarge', 100%);
+        @include WidthResponsive('large', 100%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+    }
+    .inputs{
+        @include WidthResponsive('xlarge', 95%);
+        @include WidthResponsive('large', 100%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+        
+        border: solid 1px gray;
+        outline: none;
+        height: 35px;
+        display: block;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .contact_label{
+        @include Texts('xlarge', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+
+    .address_title{
+        @include Texts('xlarge', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
+
+    .comment_inputs{
+        @include HeightResponsive('xlarge', 250px);
+        @include HeightResponsive('large', 250px);
+        @include HeightResponsive('medium', 250px);
+        @include HeightResponsive('small', 180px);
+
+        @include WidthResponsive('xlarge', 95%);
+        @include WidthResponsive('large', 100%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+
+        border: solid 1px gray;
+        outline: none;
+        height: 35px;
+        display: block;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+}

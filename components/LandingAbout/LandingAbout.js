@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LandingAbout() {
     return (
@@ -14,7 +15,9 @@ export default function LandingAbout() {
                 
                 </div>
                 <p className="about_text">Air-Dynamics provides the best in HVAC services in the South Jersey area. We are committed to providing the most effective HVAC solutions for all residential and commercial needs, from heating to cooling. <br/> Our HVAC systems are designed to provide superior comfort and optimal healing in any setting. With our system installs and service both efficient and reliable, <br/> our customers can trust us to deliver the reliable cooling or heating solutions for their HVAC needs. You are getting a team with multi-decades of experience delivering a high quality service to your home or business.</p>
-                <button className="book_now_btn">BOOK NOW</button>
+                 <Link href="/aboutus">
+                        <button className="book_now_btn">ABOUT US</button>
+                </Link>
             </div>
         </div>
     </section>

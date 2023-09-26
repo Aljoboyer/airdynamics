@@ -17,6 +17,25 @@
     margin-top: 20px;
 }
 
+.about_title_div{
+    border-bottom: solid 8px $HEADERBG;
+
+    @include WidthResponsive('xlarge', 15%);
+    @include WidthResponsive('large', 15%);
+    @include WidthResponsive('medium', 15%);
+    @include WidthResponsive('small', 15%);
+
+}
+
+.about_title{
+    @include Texts('xlarge', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 32px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 27px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+
+    color: $ButtonBGOne;
+}
+
 .landing_about_section{
     @include PaddingRespnsive('xlarge', 50px, 50px,50px, 50px);
     @include PaddingRespnsive('large',50px, 50px,50px, 50px);
@@ -79,8 +98,8 @@
     .content_header_title{
         @include Texts('xlarge', 80px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
         @include Texts('large', 80px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('medium', 50px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('small', 40px, 800, $FontFamilyRegular1, $FontFamilyRegular2 );
+        @include Texts('medium', 45px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 35px, 800, $FontFamilyRegular1, $FontFamilyRegular2 );
         color: white;
     }
     
@@ -103,24 +122,7 @@
         @include WidthResponsive('medium', 100%);
         @include WidthResponsive('small', 100%);
     }
-    .about_title_div{
-        border-bottom: solid 8px $HEADERBG;
-
-        @include WidthResponsive('xlarge', 15%);
-        @include WidthResponsive('large', 15%);
-        @include WidthResponsive('medium', 15%);
-        @include WidthResponsive('small', 15%);
-
-    }
-  
-    .about_title{
-        @include Texts('xlarge', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('large', 46px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('medium', 38px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('small', 30px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
-
-        color: $ButtonBGOne;
-    }
+   
     .about_text{
         @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
         @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);

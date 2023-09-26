@@ -4,6 +4,7 @@ import '@/styles/globals.css'
 import '../styles/Home.css'
 import '../styles/Footer.css'
 import '../styles/About.css'
+import '../styles/ContactUs.css'
 
 export default function App({ Component, pageProps }) {
 
