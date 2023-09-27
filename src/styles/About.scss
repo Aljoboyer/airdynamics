@@ -42,12 +42,13 @@
     @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
     @include PaddingRespnsive('small',30px, 30px,30px, 30px);
 
+    
     .landing_about_img_div{
-        @include WidthResponsive('xlarge', 50%);
-        @include WidthResponsive('large', 5px);
-        @include WidthResponsive('medium', 40%);
-        @include WidthResponsive('small', 70%);
-        z-index: -1;
+        @include WidthResponsive('xlarge', 100%);
+        @include WidthResponsive('large', 100%);
+        // @include WidthResponsive('medium', 40%);
+        // @include WidthResponsive('small', 70%);
+        // z-index: -1;
     }
     .landing_about_container{
         @include FlexResponsive('xlarge',flex, row, space-evenly, flex-start);

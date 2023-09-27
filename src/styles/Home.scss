@@ -256,12 +256,22 @@ body{
     @include PaddingRespnsive('xlarge', 70px, 70px,70px, 70px);
     @include PaddingRespnsive('large', 60px, 60px,60px, 60px);
     @include PaddingRespnsive('medium', 50px, 50px,50px, 50px);
-    @include PaddingRespnsive('small',40px, 40px,40px, 40px);
+    @include PaddingRespnsive('small', 40px, 40px, 40px, 40px);
 
-    @include FlexResponsive('xlarge',flex, column, center, center);
-    @include FlexResponsive('large',flex, column, center, center);
-    @include FlexResponsive('medium',flex, column, center, center);
-    @include FlexResponsive('small',flex, column, center, center);
+    @include FlexResponsive('xlarge',flex, row, space-evenly, flex-start, );
+    @include FlexResponsive('large',flex, row, space-evenly, flex-start);
+    @include FlexResponsive('medium',flex, row, space-between, flex-start);
+    @include FlexResponsive('small',flex, row, center, center, wrap-reverse);
+
+    .difference_text_div{
+        @include WidthResponsive('xlarge', 100%);
+        @include WidthResponsive('large', 100%);
+        @include WidthResponsive('medium', 100%);
+        @include WidthResponsive('small', 100%);
+
+        @include PaddingRespnsive('xlarge', 20px, 20px,20px, 20px);
+        @include PaddingRespnsive('large', 20px, 20px,20px, 20px);
+    }
 
     .difference_title{
         @include Texts('xlarge', 48px, 700, $FontFamilyRegular1, $FontFamilyRegular2);

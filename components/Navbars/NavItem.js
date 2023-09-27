@@ -57,53 +57,30 @@ export default function NavItem() {
                     >
                         <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div className="py-1">
+                            <Menu.Item>
+                                <Link href="/furnace-installation">
+                                    <span  className='block px-4 py-2 text-sm text-gray-700'>Furnace Installation</span>
+                                </Link>
+                            </Menu.Item>
+                            </div>
+                            <div className="py-1">
                                 <Menu.Item>
-                                {({ active }) => (
-                                    <a
-                                    href="#"
-                                    className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                        'block px-4 py-2 text-sm'
-                                    )}
-                                    >
-                                    Furnace Installation 
-                                    </a>
-                                )}
+                                    <Link href="/furnace-maintanence">
+                                        <span  className='block px-4 py-2 text-sm text-gray-700'>Furnace Maintenance</span>
+                                    </Link>
                                 </Menu.Item>
                             </div>
                             <div className="py-1">
                                 <Menu.Item>
-                                {({ active }) => (
-                                    <a
-                                    href="#"
-                                    className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                        'block px-4 py-2 text-sm'
-                                    )}
-                                    >
-                                    Furnace Maintenance
-                                    </a>
-                                )}
-                                </Menu.Item>
-                            </div>
-                            <div className="py-1">
-                                <Menu.Item>
-                                {({ active }) => (
-                                    <a
-                                    href="#"
-                                    className={classNames(
-                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                        'block px-4 py-2 text-sm'
-                                    )}
-                                    >
-                                    Furnace Repair
-                                    </a>
-                                )}
+                                    <Link href="/furance-repair">
+                                        <span  className='block px-4 py-2 text-sm text-gray-700'>Furnace Repair</span>
+                                    </Link>
                                 </Menu.Item>
                             </div>
                         </Menu.Items>
                     </Transition>
                     </Menu>
+
                     <Menu as="div" className="relative inline-block text-left">
                     <div className=''>
                         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3  text-sm font-semibold  shadow-sm ring-1 ring-inset ring-white hover:bg-gray-50 nav_item">
@@ -144,7 +121,6 @@ export default function NavItem() {
                                  href="/ac-maintanence">
                                      <span  className='block px-4 py-2 text-sm text-gray-700'>A/C Maintenance</span>
                                  </Link>
-
                             </Menu.Item>
                         </div>
                         </Menu.Items>
@@ -165,14 +141,12 @@ export default function NavItem() {
             </div>
           </div>
 
+{/* -------------------------Disclsure-------------------------------------- */}
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
                 <Disclosure.Button
                     as="a"
-                    href=""
-                    
-                   
-                    >
+                    href="">
                     <Link href="/">
                         <p className='nav_item'>HOME</p>
                     </Link>
@@ -207,47 +181,23 @@ export default function NavItem() {
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <Disclosure.Button className="py-1">
                             <Menu.Item>
-                            {({ active }) => (
-                                <a
-                                href="#"
-                                className={classNames(
-                                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                    'block px-4 py-2 text-sm'
-                                )}
-                                >
-                                Furnace Installation 
-                                </a>
-                            )}
+                                <Link href="/furnace-installation">
+                                    <span  className='block px-4 py-2 text-sm text-gray-700'>Furnace Installation</span>
+                                </Link>
                             </Menu.Item>
                         </Disclosure.Button>
                         <Disclosure.Button className="py-1">
                             <Menu.Item>
-                            {({ active }) => (
-                                <a
-                                href="#"
-                                className={classNames(
-                                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                    'block px-4 py-2 text-sm'
-                                )}
-                                >
-                                Furnace Maintenance
-                                </a>
-                            )}
+                                <Link href="/furnace-maintanence">
+                                    <span  className='block px-4 py-2 text-sm text-gray-700'>Furnace Maintenance</span>
+                                </Link>
                             </Menu.Item>
                         </Disclosure.Button>
                         <Disclosure.Button className="py-1">
                             <Menu.Item>
-                            {({ active }) => (
-                                <a
-                                href="#"
-                                className={classNames(
-                                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                    'block px-4 py-2 text-sm'
-                                )}
-                                >
-                                Furnace Repair
-                                </a>
-                            )}
+                                <Link href="/furance-repair">
+                                    <span  className='block px-4 py-2 text-sm text-gray-700'>Furnace Repair</span>
+                                </Link>
                             </Menu.Item>
                         </Disclosure.Button>
                     </Menu.Items>
@@ -273,47 +223,26 @@ export default function NavItem() {
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <Disclosure.Button className="py-1">
                         <Menu.Item>
-                        {({ active }) => (
-                            <a
-                            href="#"
-                            className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                'block px-4 py-2 text-sm'
-                            )}
-                            >
-                            A/C Repair
-                            </a>
-                        )}
+                            <Link
+                            href="/ac-repair">
+                                <span  className='block px-4 py-2 text-sm text-gray-700'>A/C Repair</span>
+                            </Link>
                         </Menu.Item>
                     </Disclosure.Button>
                     <Disclosure.Button className="py-1">
                         <Menu.Item>
-                        {({ active }) => (
-                            <a
-                            href="#"
-                            className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                'block px-4 py-2 text-sm'
-                            )}
-                            >
-                            A/C Installation
-                            </a>
-                        )}
+                            <Link
+                            href="/ac-installation">
+                                <span  className='block px-4 py-2 text-sm text-gray-700'>A/C Installation</span>
+                            </Link>
                         </Menu.Item>
                     </Disclosure.Button>
                     <Disclosure.Button className="py-1">
                         <Menu.Item>
-                        {({ active }) => (
-                            <a
-                            href="#"
-                            className={classNames(
-                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                'block px-4 py-2 text-sm'
-                            )}
-                            >
-                            A/C Maintenance
-                            </a>
-                        )}
+                            <Link
+                            href="/ac-maintanence">
+                                <span  className='block px-4 py-2 text-sm text-gray-700'>A/C Maintenance</span>
+                            </Link>
                         </Menu.Item>
                     </Disclosure.Button>
                     </Menu.Items>

@@ -134,6 +134,16 @@
     width: 100%;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .content_info_div {
+    padding: 0px 50px 50px 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content_info_div {
+    padding: 0px 50px 50px 50px;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
   .content_index_title {

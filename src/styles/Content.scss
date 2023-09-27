@@ -32,6 +32,9 @@
     @include WidthResponsive('large', 65%);
     @include WidthResponsive('medium', 60%);
     @include WidthResponsive('small', 100%);
+
+    @include PaddingRespnsive('xlarge', 0px, 50px,50px, 50px);
+    @include PaddingRespnsive('large',0px, 50px,50px, 50px);
 }
 
 .content_index_title{

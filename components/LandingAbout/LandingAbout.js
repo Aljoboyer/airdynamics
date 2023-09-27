@@ -19,7 +19,10 @@ export default function LandingAbout() {
     <section className="landing_about_section">
         <div className="landing_about_container">
             <div className="landing_about_img_div">
-                <Slider className="bg-black" {...settings}>
+           
+            <Image className="rounded" height="800" width="900" src="/Customers First.jpg" />
+             
+                {/* <Slider className="bg-black" {...settings}>
                     <div className="w-full">
                         <Image className="rounded" height="800" width="900" src="/Customers First.jpg" />
                     </div>
@@ -32,7 +35,7 @@ export default function LandingAbout() {
                     <div  className="w-full">
                         <Image className="rounded" height="800" width="900" src="/machine1.PNG" />
                     </div>
-                </Slider>
+                </Slider> */}
             </div>
 
             <div className="pp-4 sm:p-10">
