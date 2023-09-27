@@ -16,12 +16,8 @@ export default function Footers() {
                 <div className="footer_title_div mb-4">
                     <h4 className="footer_titles">Areas We Serve</h4>
                 </div>
-                <p className="footer_text">South Jersey</p>
-                <p className="footer_text">Gloucester County</p>
-                <p className="footer_text">Salem County</p>
-                <p className="footer_text">Burlington County</p>
-                <p className="footer_text">Camden County</p>
-                <p className="footer_text">Cherry Hill</p>
+                <p className="footer_text">we service South Jersey, shore, <br/> and Philly area</p>
+
             </div>
 
             <div className="footer_column">
@@ -41,12 +37,15 @@ export default function Footers() {
                 <div className="footer_title_div mb-4">
                     <h4 className="footer_titles">Contact Us</h4>
                 </div>
-                <p className="footer_text">26 Evergreen Ave <br/> Blackwood, NJ 08012</p>
-                <p className="footer_text"><span className="font-bold">P: </span> 856-257-1092</p>
-                <p><span className="footer_text font-bold">E: </span> <span className="footer_link">dauriahvac@gmail.com</span></p>
+                <p className="footer_text">29 Blue Jay Dr,  <br/>Clementon NJ 08021
+</p>
+                <p className="footer_text"><span className="font-bold">P: </span>856-503-8127</p>
+                <p><span className="footer_text font-bold">E: </span> <span className="footer_link">Airdynamicshvacllc@gmail.com</span></p>
 
                 <p className="footer_text"><span className="font-bold">Hour </span> Open 24 hours</p>
-                <p className="footer_text"><span className="font-bold">Fully Licensed & Insured</span> <br/>KENNETH SCOTT <br/> HVACR# 19HC00240700</p>
+                <p className="footer_text"><span className="font-bold">Fully Licensed & Insured</span> 
+                {/* <br/>KENNETH SCOTT <br/> HVACR# 19HC00240700 */}
+                </p>
             </div>
 
         </div>

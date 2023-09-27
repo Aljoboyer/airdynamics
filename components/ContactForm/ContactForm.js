@@ -3,7 +3,7 @@
 export default function ContactUsForm() {
     return (
     <div className="contact_form_container">
-         <h4 className="contact_form_title my-4">Get in Touch With Us</h4>
+         <h4 className="contact_form_title  text-[#666] my-4">Get in Touch With Us</h4>
         
         <div className="contact_form">
             <div className="flex flex-col md:flex-row couple_inputs">

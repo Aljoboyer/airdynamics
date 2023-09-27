@@ -11,6 +11,7 @@ body{
     top: 0;
     background-color: white;
     @include PaddingRespnsive('small', 2px, 2px, 30px, 2px);
+    z-index: 1
 }
 .navbar_top_header{
 

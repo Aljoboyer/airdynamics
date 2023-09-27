@@ -11,18 +11,18 @@ return (
         <ContentPageHeader title={'CONTACT AIR-DYNAMICS FOR A FREE ESTIMATE'} />
         <div className="address_card_div p-7">
             <div className="address_card mt-4">
-                <Image height="100" width="100" src="/logoImg/logo.webp" />
-                <div>
+                <Image height="100" width="100" src="/logoImg/logo.JPG" />
+                <div className="ms-2">
                     <h4 className="card_title">Our address</h4>
-                    <p className="card_text">26 Evergreen Ave <br/> Blackwood, NJ 08012</p>
+                    <p className="card_text">29 Blue Jay Dr, <br/> Clementon NJ 08021</p>
                 </div>
             </div>
-
+            
             <div className="address_card mt-4">
-                <Image height="100" width="100" src="/logoImg/logo.webp" />
-                <div>
+                <Image height="100" width="100" src="/logoImg/logo.JPG" />
+                <div className="ms-2">
                     <h4 className="card_title">Call Us</h4>
-                    <p className="card_text">856-257-1092</p>
+                    <p className="card_text">856-503-8127</p>
                 </div>
             </div>
 

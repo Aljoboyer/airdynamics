@@ -170,9 +170,6 @@ export default function NavItem() {
                         </Menu.Items>
                     </Transition>
                     </Menu>
-                    <Link href="/">
-                        <p className='nav_item'>REVIEWS</p>
-                    </Link>
                     <Link href="/contact-us">
                         <p className='nav_item'>CONTACT US</p>
                     </Link>
@@ -196,7 +193,9 @@ export default function NavItem() {
                     
                    
                     >
-                     <p className='nav_item'>HOME</p>
+                    <Link href="/">
+                        <p className='nav_item'>HOME</p>
+                    </Link>
                 </Disclosure.Button>
                 <Disclosure.Button
                     as="a"
@@ -204,7 +203,9 @@ export default function NavItem() {
                     
                    
                     >
-                     <p className='nav_item mt-2'>ABOUT US</p>
+                     <Link href="/aboutus">
+                         <p className='nav_item mt-2'>ABOUT US</p>
+                     </Link>
                 </Disclosure.Button>
                 <Menu as="div" className="block text-left ">
                 <div className=''>
@@ -338,21 +339,16 @@ export default function NavItem() {
                     </Menu.Items>
                 </Transition>
                 </Menu>
+              
                 <Disclosure.Button
                     as="a"
                     href=""
                     
                    
                     >
-                  <p className='nav_item mt-2'>REVIEWS</p>
-                </Disclosure.Button>
-                <Disclosure.Button
-                    as="a"
-                    href=""
-                    
-                   
-                    >
-                     <p className='nav_item mt-2'>CONTACT US</p>
+                    <Link href="contact-us">
+                    <p className='nav_item mt-2'>CONTACT US</p>
+                    </Link>
                 </Disclosure.Button>
             </div>
           </Disclosure.Panel>

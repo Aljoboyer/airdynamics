@@ -7,7 +7,7 @@ export default function HeaderBottom() {
             <BsEnvelope className="header_icon" />
             <div className='ms-4'>
                 <h4 className='respond_text'>We respond 24/7 to emergencies</h4>
-                <h4 className='bottom_header_title'>We Live Here, We Give Here</h4>
+                <h4 className='bottom_header_title'>Airdynamicshvacllc@gmail.com</h4>
             </div>
         </div>
         <button className='book_now_btn mt-4'>BOOK NOW</button>

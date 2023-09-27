@@ -7,7 +7,7 @@ export default function Navbars() {
         <div className="navbar_top_header ">
             <div className="top_header_item icon_top_item py-4 lg:p-0">
                 <img
-                src="/logoImg/logo.webp"
+                src="/logoImg/logo.JPG"
                 alt="Picture of the author"
             
                 />
@@ -40,7 +40,7 @@ export default function Navbars() {
                 <div className="top_header_item">
                     <div>
                     <p className="top_nav_text text-white ">CALL US TODAY</p>
-                    <h4 className="top_nav_text_heading text-white">856-257-1092</h4>
+                    <h4 className="top_nav_text_heading text-white">856-503-8127</h4>
                     </div>
                 </div>
             </div>

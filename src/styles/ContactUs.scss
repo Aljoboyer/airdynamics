@@ -60,6 +60,12 @@
     @include WidthResponsive('medium', 100%);
     @include WidthResponsive('small', 100%);
 
+    .contact_form_title{
+        @include Texts('xlarge', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    }
     .contact_form{
         @include WidthResponsive('xlarge', 100%);
         @include WidthResponsive('large', 100%);
