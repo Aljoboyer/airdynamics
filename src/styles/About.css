@@ -350,7 +350,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
   .content_header .content_header_title {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 800;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;
@@ -358,7 +358,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .content_header .content_header_title {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 800;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;
@@ -366,7 +366,7 @@
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   .content_header .content_header_title {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 800;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;
@@ -374,7 +374,7 @@
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
   .content_header .content_header_title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 800;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;

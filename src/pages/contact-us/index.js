@@ -33,7 +33,7 @@ return (
               <div className="about_title_div mb-7"></div>
 
               <ContactUsForm/>
-              <button className="book_now_btn">BOOK SERVICE</button>
+             
         </div>
     </section>
 )

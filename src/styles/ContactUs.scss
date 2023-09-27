@@ -59,63 +59,65 @@
     @include WidthResponsive('large', 100%);
     @include WidthResponsive('medium', 100%);
     @include WidthResponsive('small', 100%);
+  
+}
 
-    .contact_form_title{
-        @include Texts('xlarge', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('large', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('medium', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
-    }
-    .contact_form{
-        @include WidthResponsive('xlarge', 100%);
-        @include WidthResponsive('large', 100%);
-        @include WidthResponsive('medium', 100%);
-        @include WidthResponsive('small', 100%);
-    }
-    .inputs{
-        @include WidthResponsive('xlarge', 95%);
-        @include WidthResponsive('large', 100%);
-        @include WidthResponsive('medium', 100%);
-        @include WidthResponsive('small', 100%);
-        
-        border: solid 1px gray;
-        outline: none;
-        height: 35px;
-        display: block;
-        margin-top: 10px;
-        padding-left: 10px;
-    }
+.contact_form_title{
+    @include Texts('xlarge', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
 
-    .contact_label{
-        @include Texts('xlarge', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('large', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('medium', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('small', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
-    }
+.contact_form{
+    @include WidthResponsive('xlarge', 100%);
+    @include WidthResponsive('large', 100%);
+    @include WidthResponsive('medium', 100%);
+    @include WidthResponsive('small', 100%);
+}
+.inputs{
+    @include WidthResponsive('xlarge', 95%);
+    @include WidthResponsive('large', 100%);
+    @include WidthResponsive('medium', 100%);
+    @include WidthResponsive('small', 100%);
+    
+    border: solid 1px gray;
+    outline: none;
+    height: 35px;
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px;
+}
 
-    .address_title{
-        @include Texts('xlarge', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('large', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('medium', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('small', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
-    }
+.contact_label{
+    @include Texts('xlarge', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 14px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
 
-    .comment_inputs{
-        @include HeightResponsive('xlarge', 250px);
-        @include HeightResponsive('large', 250px);
-        @include HeightResponsive('medium', 250px);
-        @include HeightResponsive('small', 180px);
+.address_title{
+    @include Texts('xlarge', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 16px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
 
-        @include WidthResponsive('xlarge', 95%);
-        @include WidthResponsive('large', 100%);
-        @include WidthResponsive('medium', 100%);
-        @include WidthResponsive('small', 100%);
+.comment_inputs{
+    @include HeightResponsive('xlarge', 250px);
+    @include HeightResponsive('large', 250px);
+    @include HeightResponsive('medium', 250px);
+    @include HeightResponsive('small', 180px);
 
-        border: solid 1px gray;
-        outline: none;
-        height: 35px;
-        display: block;
-        margin-top: 10px;
-        padding-left: 10px;
-    }
+    @include WidthResponsive('xlarge', 95%);
+    @include WidthResponsive('large', 100%);
+    @include WidthResponsive('medium', 100%);
+    @include WidthResponsive('small', 100%);
+
+    border: solid 1px gray;
+    outline: none;
+    height: 35px;
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px;
 }

@@ -1,0 +1,54 @@
+@import './SharedMixins';
+@import './Variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;500;700;800&display=swap');
+
+.content_div{
+    @include PaddingRespnsive('xlarge', 50px, 50px,50px, 50px);
+    @include PaddingRespnsive('large',50px, 50px,50px, 50px);
+    @include PaddingRespnsive('medium',30px, 30px,30px, 30px);
+    @include PaddingRespnsive('small',30px, 30px,30px, 30px);
+}
+.content_div{
+    @include FlexResponsive('xlarge',flex, row, space-evenly, flex-start);
+    @include FlexResponsive('large',flex, row, space-evenly, flex-start);
+    @include FlexResponsive('medium',flex, row, space-evenly, center);
+    @include FlexResponsive('small',flex, column, center, center,);
+}
+.content_main_titile{
+    @include Texts('xlarge', 40px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 40px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 28px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
+
+.content_contact_form_div{
+    @include WidthResponsive('xlarge', 35%);
+    @include WidthResponsive('large', 35%);
+    @include WidthResponsive('medium', 40%);
+    @include WidthResponsive('small', 100%);
+}
+.content_info_div{
+    @include WidthResponsive('xlarge', 65%);
+    @include WidthResponsive('large', 65%);
+    @include WidthResponsive('medium', 60%);
+    @include WidthResponsive('small', 100%);
+}
+
+.content_index_title{
+    @include Texts('xlarge', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 24px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 22px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 20px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
+
+.content_text{
+    @include Texts('xlarge', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('large', 18px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('medium', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2);
+    @include Texts('small', 16px, 500, $FontFamilyRegular1, $FontFamilyRegular2 );
+}
+
+.content_text_div{
+    @include PaddingRespnsive('xlarge', 30px, 30px,30px, 0px);
+    @include PaddingRespnsive('large',30px, 30px,30px, 0px);
+}

@@ -103,10 +103,10 @@
     @include FlexResponsive('small',flex, row, center, center,);
 
     .content_header_title{
-        @include Texts('xlarge', 80px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('large', 80px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('medium', 45px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
-        @include Texts('small', 35px, 800, $FontFamilyRegular1, $FontFamilyRegular2 );
+        @include Texts('xlarge', 70px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('large', 70px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('medium', 35px, 800, $FontFamilyRegular1, $FontFamilyRegular2);
+        @include Texts('small', 25px, 800, $FontFamilyRegular1, $FontFamilyRegular2 );
         color: white;
     }
     

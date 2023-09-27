@@ -58,7 +58,7 @@ export default function ContactUsForm() {
                 <label className="contact_label text-[#666] block">Your Comments/Questions <span className="text-[#C60504] italic text-xs">{`(Required)`}</span></label>
                 <textarea className="comment_inputs" />
             </div>
-
+            <button className="book_now_btn">BOOK SERVICE</button>
         </div>
     </div>
     )

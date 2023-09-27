@@ -244,8 +244,9 @@
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .contact_form_title {
+  .contact_form_title {
     font-size: 24px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -253,7 +254,7 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .contact_form_title {
+  .contact_form_title {
     font-size: 24px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -261,7 +262,7 @@
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .contact_form_title {
+  .contact_form_title {
     font-size: 20px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -269,34 +270,36 @@
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .contact_form_title {
+  .contact_form_title {
     font-size: 20px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .contact_form {
+  .contact_form {
     width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .contact_form {
+  .contact_form {
     width: 100%;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .contact_form {
+  .contact_form {
     width: 100%;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .contact_form {
+  .contact_form {
     width: 100%;
   }
 }
-.contact_form_cotainer .inputs {
+
+.inputs {
   border: solid 1px gray;
   outline: none;
   height: 35px;
@@ -305,27 +308,28 @@
   padding-left: 10px;
 }
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .inputs {
+  .inputs {
     width: 95%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .inputs {
+  .inputs {
     width: 100%;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .inputs {
+  .inputs {
     width: 100%;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .inputs {
+  .inputs {
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .contact_label {
+  .contact_label {
     font-size: 14px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -333,7 +337,7 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .contact_label {
+  .contact_label {
     font-size: 14px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -341,7 +345,7 @@
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .contact_label {
+  .contact_label {
     font-size: 14px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -349,15 +353,16 @@
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .contact_label {
+  .contact_label {
     font-size: 14px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .address_title {
+  .address_title {
     font-size: 16px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -365,7 +370,7 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .address_title {
+  .address_title {
     font-size: 16px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -373,7 +378,7 @@
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .address_title {
+  .address_title {
     font-size: 16px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
@@ -381,14 +386,15 @@
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .address_title {
+  .address_title {
     font-size: 16px;
     font-weight: 700;
     font-family: "Inter", sans-serif;
     font-family: "Open Sans", sans-serif;
   }
 }
-.contact_form_cotainer .comment_inputs {
+
+.comment_inputs {
   border: solid 1px gray;
   outline: none;
   height: 35px;
@@ -397,42 +403,42 @@
   padding-left: 10px;
 }
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     height: 250px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     height: 250px;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     height: 250px;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     height: 180px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     width: 95%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     width: 100%;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     width: 100%;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 567px) {
-  .contact_form_cotainer .comment_inputs {
+  .comment_inputs {
     width: 100%;
   }
 }/*# sourceMappingURL=ContactUs.css.map */
