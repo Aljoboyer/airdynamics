@@ -125,7 +125,7 @@ export default function ContactUsForm() {
                         setFormObj({...formObj, comments: e.target.value})
                     }} required name="message" className="comment_inputs" />
             </div>
-            <button type='submit' className="book_now_btn bg-red-500">BOOK SERVICE</button>
+            <button type='submit' className="book_now_btn">BOOK SERVICE</button>
         </form>
     </div>
     )
