@@ -6,11 +6,15 @@ import HeaderBottom from '../../components/Headers/HeaderBottom'
 import DifferenceSection from '../../components/DifferenceSection/DifferenceSection'
 import WhyHireMe from '../../components/WhyHire/WhyHire'
 import LandingAbout from '../../components/LandingAbout/LandingAbout'
+import Head from 'next/head'
 
 
 export default function Home() {
   return (
     <main className="">
+        <Head>
+        <title>Air Dynamics</title>
+      </Head>
         <Header/>
         <HeaderBottom/>
         <WhyHireMe/>

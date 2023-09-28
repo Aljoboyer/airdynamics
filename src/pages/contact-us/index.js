@@ -3,11 +3,15 @@ import ContentPageHeader from "../../../components/ContentPageHeader/ContentPage
 import RootContainer from "../../../components/RootContainer"
 import { CgTimer } from 'react-icons/cg';
 import ContactUsForm from "../../../components/ContactForm/ContactForm";
+import Head from "next/head";
 
 
 export default function ContactUs() {
 return (
     <section className="">
+           <Head>
+        <title>Air Dynamics</title>
+      </Head>
         <ContentPageHeader title={'CONTACT AIR-DYNAMICS FOR A FREE ESTIMATE'} />
         <div className="address_card_div p-7">
             <div className="address_card mt-4">

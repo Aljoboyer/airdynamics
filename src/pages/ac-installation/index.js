@@ -2,10 +2,14 @@ import React from 'react'
 import ContentPageHeader from '../../../components/ContentPageHeader/ContentPageHeader'
 import RootContainer from '../../../components/RootContainer'
 import ContactUsForm from '../../../components/ContactForm/ContactForm'
+import Head from 'next/head'
 
 export default function ACInstallations() {
   return (
     <section className='content_section'>
+         <Head>
+        <title>Air Dynamics</title>
+      </Head>
         <ContentPageHeader title={'AIR CONDITIONING INSTALLATION COMPANY IN GLOUCESTER TOWNSHIP'} />
 
         <div className='content_div'>

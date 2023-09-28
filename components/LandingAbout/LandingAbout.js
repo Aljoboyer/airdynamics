@@ -1,19 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
-import Slider from "react-slick";
+
 
 export default function LandingAbout() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 3000,
-        autoplaySpeed: 4000,
-        cssEase: "linear"
-      };
+
 
     return (
     <section className="landing_about_section">
@@ -21,21 +12,6 @@ export default function LandingAbout() {
             <div className="landing_about_img_div">
            
             <Image className="rounded" height="800" width="900" src="/Customers First.jpg" />
-             
-                {/* <Slider className="bg-black" {...settings}>
-                    <div className="w-full">
-                        <Image className="rounded" height="800" width="900" src="/Customers First.jpg" />
-                    </div>
-                    <div  className="w-full">
-                        <Image className="rounded" height="800" width="900" src="/crane.jpg" />
-                    </div>
-                    <div  className="w-full">
-                        <Image className="rounded" height="800" width="900" src="/home.JPG" />
-                    </div>
-                    <div  className="w-full">
-                        <Image className="rounded" height="800" width="900" src="/machine1.PNG" />
-                    </div>
-                </Slider> */}
             </div>
 
             <div className="pp-4 sm:p-10">

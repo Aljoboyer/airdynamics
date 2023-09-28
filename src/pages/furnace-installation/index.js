@@ -2,10 +2,14 @@ import React from 'react'
 import ContentPageHeader from '../../../components/ContentPageHeader/ContentPageHeader'
 import RootContainer from '../../../components/RootContainer'
 import ContactUsForm from '../../../components/ContactForm/ContactForm'
+import Head from 'next/head'
 
 export default function FurnaceInstallation() {
   return (
     <section className='content_section'>
+         <Head>
+        <title>Air Dynamics</title>
+      </Head>
         <ContentPageHeader title={'FURNACE INSTALLATION & REPLACEMENT COMPANY NEAR SOUTH JERSEY, SHORE, AND PHILLY AREA'} />
 
         <div className='content_div'>

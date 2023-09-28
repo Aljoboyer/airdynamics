@@ -6,8 +6,8 @@ import '../styles/Footer.css'
 import '../styles/About.css'
 import '../styles/ContactUs.css'
 import '../styles/Content.css'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 
 export default function App({ Component, pageProps }) {
 

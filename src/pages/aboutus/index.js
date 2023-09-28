@@ -2,10 +2,14 @@ import ContentPageHeader from "../../../components/ContentPageHeader/ContentPage
 import RootContainer from "../../../components/RootContainer"
 import { CgTimer } from 'react-icons/cg';
 import { BsBookmarkStarFill , BsPersonSquare} from 'react-icons/bs';
+import Head from "next/head";
 
 export default function AboutUs() {
     return (
       <section className="">
+           <Head>
+        <title>Air Dynamics</title>
+      </Head>
          <ContentPageHeader title={'ABOUT AIR DYNAMICS HEATING AND AIR'} />
          <div className="about_container">
             <div className="about_text_container">

@@ -1,5 +1,51 @@
 
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+import Swal from 'sweetalert2';
+
 export default function Header() {
+    const [formObj, setFormObj] = useState({
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+        streetAddress: '',
+        city: '',
+        zip: '',
+        comments: '',
+        serviceType: '',
+    })
+    const SERVICE_ID = 'service_kt2uikv';
+    const TEMPLATE_ID = 'template_ej4l6gr';
+    const USER_ID = 'DH5PqPDstZZqxtt1n';
+
+    var templateParams = {
+        from_name: `${formObj?.firstName} ${formObj?.lastName}`,
+        to_name: 'Air Dynamics',
+        message: `Hello Sir, I am from ${formObj?.streetAddress}, ${formObj?.city}, ${formObj?.zip}. I need ${formObj?.serviceType} service. ${formObj?.comments}. My contact Details Phone: ${formObj?.phone}, Email: ${formObj?.email}`
+    };
+    
+
+    const handleOnSubmit = e => {
+        e.preventDefault();
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+          .then((result) => {
+            console.log(result.text);
+            console.log('email', e.target.message)
+            Swal.fire({
+                icon: 'success',
+                title: 'Service Booked Successfully'
+              })
+          }, (error) => {
+            console.log(error.text);
+         
+          });
+        e.target.reset()
+        // console.log('Form Data >>>', formObj)
+        // console.log("temaplate data >>", {templateParams})
+    }
+
+
     return (
     <div className="header_section">
         <div className="header_container">
@@ -12,7 +58,7 @@ export default function Header() {
             <button className="book_now_btn text-white">BOOK NOW</button>
         </div>
 
-        <div className="request_form mt-4">
+        <form onSubmit={handleOnSubmit} className="request_form mt-4">
             <h1 className="form_title mb-4">Request Service</h1>
             <div className="flex justify-center items-center">
                 <img
@@ -30,30 +76,38 @@ export default function Header() {
 
                 <div className="mt-4">
                     <label className="nav_item text-base text-[#666] block">Name <span className="text-[#C60504] italic text-xs">{`(Required)`}</span></label>
-                    <input className="inputs" />
+                    <input  onChange={(e) => {
+                        setFormObj({...formObj, firstName: e.target.value})
+                    }} required className="inputs" />
                 </div>
                 <div  className="mt-4">
                     <label className="nav_item text-base text-[#666] block">Email <span className="text-[#C60504] italic text-xs">{`(Required)`}</span></label>
-                    <input className="inputs" />
+                    <input  onChange={(e) => {
+                        setFormObj({...formObj, email: e.target.value})
+                    }} required className="inputs" />
                 </div>
                 <div   className="mt-4">
                     <label className="nav_item text-base text-[#666] block">Phone <span className="text-[#C60504] italic text-xs">{`(Required)`}</span></label>
-                    <input className="inputs" />
+                    <input  onChange={(e) => {
+                        setFormObj({...formObj, phone: e.target.value})
+                    }} required className="inputs" />
                 </div>
 
                 <div   className="mt-4">
                     <label className="nav_item text-base text-[#666] block">Type of Service <span className="text-[#C60504] italic text-xs">{`(Required)`}</span></label>
-                        <select id="fruitSelect" className="inputs pr-2" name="fruit">
-                            <option value="apple">System Installation Estimate</option>
-                            <option value="banana">Maintenance</option>
-                            <option value="cherry">Repair</option>
-                            <option value="orange">Other</option>
+                        <select  onChange={(e) => {
+                        setFormObj({...formObj, serviceType: e.target.value})
+                    }} required id="fruitSelect" className="inputs pr-2" name="fruit">
+                            <option value="System Installation Estimate">System Installation Estimate</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Repair">Repair</option>
+                            <option value="Other">Other</option>
                         </select>
                 </div>
             </div>
 
-            <button className='book_now_btn mt-4 ms-4'>BOOK SERVICE</button>
-        </div>
+            <button type='submit' className='book_now_btn mt-4 ms-4'>BOOK SERVICE</button>
+        </form>
     </div>
     </div>
     )
