@@ -133,10 +133,14 @@ export default function NavItem() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden lg:inline-block">
-                   <button className='book_service_btn text-white'>BOOK SERVICE</button>
+                   <Link href="/contact-us">
+                        <button className='book_service_btn text-white'>BOOK SERVICE</button>
+                    </Link>
               </div>
                 <div className="absolute top-11 flex items-center lg:hidden">
-                   <button className='book_service_btn text-white'>BOOK SERVICE</button>
+                   <Link href="/contact-us">
+                        <button className='book_service_btn text-white'>BOOK SERVICE</button>
+                    </Link>
               </div>
             </div>
           </div>

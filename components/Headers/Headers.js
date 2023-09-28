@@ -1,5 +1,6 @@
 
 import emailjs from '@emailjs/browser';
+import Link from 'next/link';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 
@@ -15,6 +16,7 @@ export default function Header() {
         comments: '',
         serviceType: '',
     })
+    const [loader, setLoader] = useState(false)
     const SERVICE_ID = 'service_kt2uikv';
     const TEMPLATE_ID = 'template_ej4l6gr';
     const USER_ID = 'DH5PqPDstZZqxtt1n';
@@ -28,17 +30,17 @@ export default function Header() {
 
     const handleOnSubmit = e => {
         e.preventDefault();
+        setLoader(true)
         emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
           .then((result) => {
-            console.log(result.text);
-            console.log('email', e.target.message)
+            setLoader(false)
             Swal.fire({
                 icon: 'success',
                 title: 'Service Booked Successfully'
               })
           }, (error) => {
             console.log(error.text);
-         
+            setLoader(false)
           });
         e.target.reset()
         // console.log('Form Data >>>', formObj)
@@ -54,8 +56,11 @@ export default function Header() {
                 <p className="top_banner_text text-white text-center">Most trusted HVAC company in South Jersey</p>
             </div>
             <h1 className="main_heading text-white">FOR ALL YOUR HEATING & COOLING NEEDS</h1>
-            <p className="text-white regular_text mt-12 mb-4">Top-Rated Heating & Cooling Services in South Jersey Since 2001</p>
-            <button className="book_now_btn text-white">BOOK NOW</button>
+            <p className="text-white regular_text mt-12 mb-4">Top-Rated Heating & Cooling Services in  South Jersey, shore, and Philly</p>
+        
+            <Link href="/contact-us">
+                <button className="book_now_btn text-white">BOOK NOW</button>
+            </Link>
         </div>
 
         <form onSubmit={handleOnSubmit} className="request_form mt-4">
@@ -105,8 +110,10 @@ export default function Header() {
                         </select>
                 </div>
             </div>
-
-            <button type='submit' className='book_now_btn mt-4 ms-4'>BOOK SERVICE</button>
+            {
+                loader ? <button className='book_now_btn mt-4 ms-4'>LOADING...</button> :<button type='submit' className='book_now_btn mt-4 ms-4'>BOOK SERVICE</button>
+            }
+            
         </form>
     </div>
     </div>

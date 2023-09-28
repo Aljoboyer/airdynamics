@@ -40,7 +40,7 @@ export default function Navbars() {
                 <div className="top_header_item">
                     <div>
                     <p className="top_nav_text text-white ">CALL US TODAY</p>
-                    <h4 className="top_nav_text_heading text-white">856-503-8127</h4>
+                    <a href={`tel:${856-257-1092}`}><h4 className="top_nav_text_heading text-white">856-257-1092</h4></a>
                     </div>
                 </div>
             </div>

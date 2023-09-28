@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BsEnvelope } from 'react-icons/bs';
 
 export default function HeaderBottom() {
@@ -10,7 +11,10 @@ export default function HeaderBottom() {
                 <h4 className='bottom_header_title'>Airdynamicshvacllc@gmail.com</h4>
             </div>
         </div>
-        <button className='book_now_btn mt-4'>BOOK NOW</button>
+       
+        <Link href="/contact-us">
+            <button className='book_now_btn mt-4'>BOOK NOW</button>
+        </Link>
 
         <div className="emptyDiv hidden lg:inline-block"></div>
 
@@ -18,7 +22,7 @@ export default function HeaderBottom() {
             <div className="top_header_item">
                 <div>
                 <p className="top_nav_text text-white ">CALL US TODAY</p>
-                <h4 className="top_nav_text_heading text-white">856-257-1092</h4>
+                <a href={`tel:${856-257-1092}`}><h4 className="top_nav_text_heading text-white">856-257-1092</h4></a>
                 </div>
             </div>
         </div>

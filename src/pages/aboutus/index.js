@@ -3,6 +3,7 @@ import RootContainer from "../../../components/RootContainer"
 import { CgTimer } from 'react-icons/cg';
 import { BsBookmarkStarFill , BsPersonSquare} from 'react-icons/bs';
 import Head from "next/head";
+import Link from "next/link";
 
 export default function AboutUs() {
     return (
@@ -15,8 +16,11 @@ export default function AboutUs() {
             <div className="about_text_container">
               <h1 className="about_title">Why Choose Air Dynamics Heating and Air</h1>
               <div className="about_title_div mb-7"></div>
-              <p className="about_text">When your HVAC system breaks down, it can be a stressful and overwhelming experience. You don’t know who to call or how long it will take for someone to come out and help you get the problem fixed. Plus, you worry about the cost of repairs.<br/> Don’t worry! Our experienced HVAC technicians are here to help. We’ll show up quickly with all the necessary tools and parts needed to get your system running again in no time.<br/> We guarantee quality workmanship at an affordable price so that you can rest easy knowing that your home is comfortable again soon!</p>
-              <button className="book_now_btn">BOOK NOW</button>
+              <p className="about_text">We provide great and affordable HVAC services to the South Jersey and Philadelphia area. Call us today!. When your HVAC system breaks down, it can be a stressful and overwhelming experience. You don’t know who to call or how long it will take for someone to come out and help you get the problem fixed. Plus, you worry about the cost of repairs.<br/> Don’t worry! Our experienced HVAC technicians are here to help. We’ll show up quickly with all the necessary tools and parts needed to get your system running again in no time.<br/> We guarantee quality workmanship at an affordable price so that you can rest easy knowing that your home is comfortable again soon!</p>
+              
+              <Link href="/contact-us">
+                   <button className="book_now_btn">BOOK NOW</button>
+              </Link>
             </div>
             <div className="about_info_div ms-4">
                 <div className="about_icon_div mt-10">

@@ -1,6 +1,7 @@
 
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 export default function ContactUsForm() {
     const [formObj, setFormObj] = useState({
@@ -14,6 +15,7 @@ export default function ContactUsForm() {
         comments: '',
         serviceType: '',
     })
+    const [loader, setLoader] = useState(false)
     const SERVICE_ID = 'service_kt2uikv';
     const TEMPLATE_ID = 'template_ej4l6gr';
     const USER_ID = 'DH5PqPDstZZqxtt1n';
@@ -27,13 +29,19 @@ export default function ContactUsForm() {
 
     const handleOnSubmit = e => {
         e.preventDefault();
+        setLoader(true)
         emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
           .then((result) => {
             console.log(result.text);
             console.log('email', e.target.message)
-           
+           setLoader(false)
+           Swal.fire({
+            icon: 'success',
+            title: 'Service Booked Successfully'
+          })
           }, (error) => {
             console.log(error.text);
+            setLoader(false)
          
           });
         e.target.reset()
