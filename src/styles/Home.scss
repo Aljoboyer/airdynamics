@@ -65,7 +65,7 @@ body{
     @include Texts('xlarge', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
     @include Texts('large', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
     @include Texts('medium', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2);
-    @include Texts('small', 18px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
+    @include Texts('small', 15px, 700, $FontFamilyRegular1, $FontFamilyRegular2 );
 }
 
 .book_service_btn{

@@ -22,7 +22,7 @@ export default function HeaderBottom() {
             <div className="top_header_item">
                 <div>
                 <p className="top_nav_text text-white ">CALL US TODAY</p>
-                <a href={`tel:${856-257-1092}`}><h4 className="top_nav_text_heading text-white">856-257-1092</h4></a>
+                <a href={`tel:${8562571092}`}><h4 className="top_nav_text_heading text-white">856-257-1092</h4></a>
                 </div>
             </div>
         </div>

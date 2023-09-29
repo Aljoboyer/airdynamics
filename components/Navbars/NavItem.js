@@ -167,7 +167,7 @@ export default function NavItem() {
                 </Disclosure.Button>
                 <Menu as="div" className="block text-left ">
                 <div className=''>
-                    <Menu.Button className="inline-flex w-full gap-x-1.5 rounded-md bg-white   text-sm font-semibold  shadow-sm ring-1 ring-inset ring-white hover:bg-gray-50 nav_item mt-2">
+                    <Menu.Button className="inline-flex w-full gap-x-1.5 rounded-md bg-white     shadow-sm ring-1 ring-inset ring-white hover:bg-gray-50 nav_item mt-2">
                     HEATING
                     <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
                     </Menu.Button>
@@ -209,7 +209,7 @@ export default function NavItem() {
                 </Menu>
                 <Menu as="div" className=" block text-left">
                 <div className=''>
-                    <Menu.Button className="inline-flex w-full  gap-x-1.5 rounded-md bg-white   text-sm font-semibold  shadow-sm ring-1 ring-inset ring-white hover:bg-gray-50 nav_item mt-2">
+                    <Menu.Button className="inline-flex w-full  gap-x-1.5 rounded-md bg-white     shadow-sm ring-1 ring-inset ring-white hover:bg-gray-50 nav_item mt-2">
                     COOLING 
                     <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
                     </Menu.Button>
