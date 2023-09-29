@@ -9,6 +9,7 @@
   font-family: "Open Sans", sans-serif;
   color: white;
   margin-top: 20px;
+  background-color: #c60505;
 }
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
   .book_now_btn {

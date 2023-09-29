@@ -55,6 +55,16 @@ body {
     flex-wrap: "wrap";
   }
 }
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .navbar_top_header .nav_logo {
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .navbar_top_header .nav_logo {
+    width: 95%;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
   .navbar_top_header .icon_top_item {
     width: 20%;
@@ -74,6 +84,10 @@ body {
   .navbar_top_header .icon_top_item {
     width: 100%;
   }
+}
+.navbar_top_header .top_header_item {
+  margin: 0px;
+  padding: 0px;
 }
 @media only screen and (min-width: 992px) and (max-width: 3000px) {
   .navbar_top_header .top_header_item {

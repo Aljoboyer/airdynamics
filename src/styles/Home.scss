@@ -20,18 +20,26 @@ body{
     @include FlexResponsive('medium',flex, row, space-between, center);
     @include FlexResponsive('small',flex, column, center, center, 'wrap');
 
+    .nav_logo{
+        @include HeightResponsive('small', 100px);
+        @include WidthResponsive('small', 95%);
+    }
     .icon_top_item{
         @include WidthResponsive('xlarge', 20%);
         @include WidthResponsive('large', 20%);
         @include WidthResponsive('medium', 100%);
         @include WidthResponsive('small', 100%);
+
+        // @include HeightResponsive('small', 100px);
+        // @include PaddingRespnsive('small', 10px, 0px, 10px, 0px);
     }
     .top_header_item{
         @include FlexResponsive('xlarge',flex, row, center, center);
         @include FlexResponsive('large',flex, row, center, center);
         @include FlexResponsive('medium',flex, row, center, center);
         @include FlexResponsive('small',flex, column, center, center, 'wrap');
-        
+        margin: 0px;
+        padding: 0px;
     }
     .emptyDiv{
         background-color: white;

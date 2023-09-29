@@ -5,14 +5,14 @@ export default function Navbars() {
     return (
     <div className="nav_bars">
         <div className="navbar_top_header ">
-            <div className="top_header_item icon_top_item py-4 lg:p-0">
+            <div className="top_header_item icon_top_item lg:p-0">
                 <img
                 src="/logoImg/logo.JPG"
                 alt="Picture of the author"
-            
+                className="nav_logo"
                 />
             </div>
-            <div className="bg-[#075793] w-full navbar_top_header  mt-4 lg:mt-0 py-4 lg:px-4">
+            <div className="bg-[#075793] w-full navbar_top_header   lg:mt-0 py-4 lg:px-4">
                 <div className="hidden lg:inline-block">
                 <div className="top_header_item ">
                     <img
