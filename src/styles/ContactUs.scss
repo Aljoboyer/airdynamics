@@ -121,3 +121,18 @@
     margin-top: 10px;
     padding-left: 10px;
 }
+
+.contact_book_now_btn{
+    @include ButtonMixins('xlarge', 42px, 140px,  $ButtonBGOne, 5px);
+    @include ButtonMixins('large', 42px, 140px,  $ButtonBGOne,  5px);
+    @include ButtonMixins('medium', 42px, 140px,  $ButtonBGOne, 5px);
+    @include ButtonMixins('small', 42px, 140px,  $ButtonBGOne,  5px );
+
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $FontFamilyRegular1;
+    font-family: $FontFamilyRegular2;
+    color: white;
+    margin-top: 20px;
+    background-color: $ButtonBGOne;
+}

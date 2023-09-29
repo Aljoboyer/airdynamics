@@ -441,4 +441,50 @@
   .comment_inputs {
     width: 100%;
   }
+}
+
+.contact_book_now_btn {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-top: 20px;
+  background-color: #c60505;
+}
+@media only screen and (min-width: 992px) and (max-width: 3000px) {
+  .contact_book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact_book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .contact_book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .contact_book_now_btn {
+    background-color: #c60505;
+    display: block;
+    border-radius: 5px;
+    height: 42px;
+    width: 140px;
+  }
 }/*# sourceMappingURL=ContactUs.css.map */
