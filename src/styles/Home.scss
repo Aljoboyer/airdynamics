@@ -21,7 +21,7 @@ body{
     @include FlexResponsive('small',flex, column, center, center, 'wrap');
 
     .nav_logo{
-        @include HeightResponsive('small', 100px);
+        @include HeightResponsive('small', 90px);
         @include WidthResponsive('small', 95%);
     }
     .icon_top_item{
